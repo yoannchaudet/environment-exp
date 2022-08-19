@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: build
+      - run: echo build
 
   deploy:
     runs-on: ubuntu-latest
@@ -20,4 +20,4 @@ jobs:
       name: preview
       url: https://preview.example.com
     steps:
-      - run: deploy
+      - run: echo deploy
